@@ -1,0 +1,9 @@
+<h1> Dunder Mifflin Employee Index </h1>
+
+<main>
+
+<% @employees.each do |employee| %>
+<p><%= link_to employee.full_name, employee_path(employee) %></p>
+<%end%>
+
+</main>

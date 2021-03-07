@@ -1,0 +1,9 @@
+<h1> Dunder Mifflin Dog Index </h1>
+
+<main>
+
+<% @dogs.each do |dog| %>
+<p><%= link_to dog.name, dog_path(dog) %></p>
+<%end%>
+
+</main>
